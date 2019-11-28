@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  border: none;
+  margin: 0;
+  padding: 0.2em;
+  text-align: center;
+  transition: 0.3s;
+}
+
+button:hover {
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+#app {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: darkslategray;
+}
+
+#calculator {
+  background-color: #212121;
+  position: relative;
+  width: 400px;
+  height: 500px;
+  display: grid;
+  padding: 0.5rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "formulaScreen formulaScreen formulaScreen formulaScreen"
+    "outputScreen outputScreen outputScreen outputScreen"
+    "AC AC modulus divide"
+    "seven eight nine multiply"
+    "four five six subtract"
+    "one two three add"
+    "zero zero decimal equals";
+}
+
+#formula-screen {
+  grid-area: formulaScreen;
+  margin-bottom: 0;
+  font-size: 1.3rem;
+  padding-top: 0.6rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  min-height: 1.6rem;
+  text-align: right;
+}
+
+#output-screen {
+  grid-area: outputScreen;
+  margin-top: 0;
+  padding-top: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  min-height: 2.3rem;
+  text-align: right;
+}
+
+#ac {
+  grid-area: AC;
+}
+
+#modulus {
+  grid-area: modulus;
+}
+
+#divide {
+  grid-area: divide;
+}
+
+#multiply {
+  grid-area: multiply;
+}
+
+#subtract {
+  grid-area: subtract;
+}
+
+#add {
+  grid-area: add;
+}
+
+#decimal {
+  grid-area: decimal;
+}
+
+#equals {
+  grid-area: equals;
+}
+
+#zero {
+  grid-area: zero;
+}
+
+.screen-display {
+  background-color: #859f96;
+  font-size: 2rem;
+  margin: 0.5rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  overflow: hidden;
+  text-overflow: "";
+  border: none;
+}
+
+.button {
+  font-size: 1.25rem;
+  color: whitesmoke;
+  margin: 0.5rem;
+}
+
+.button.math-operator {
+  background-color: rgba(220, 140, 0, 0.9);
+}
+
+.button.number-pad {
+  background-color: #060606;
+}
+
+.button.all-clear {
+  background-color: firebrick;
+}

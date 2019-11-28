@@ -1,2 +1,4 @@
 # vanilla-js-calculator
-Created with CodeSandbox
+
+A simple vanilla JS calculator visually built in Grid and Flexbox.
+JS Logic is heavily based on [WebDevSimplified's version](https://github.com/WebDevSimplified/Vanilla-JavaScript-Calculator).
