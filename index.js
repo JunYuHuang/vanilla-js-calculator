@@ -77,7 +77,6 @@ calculator.addEventListener("click", e => {
       case "AC":
         console.log("all clear");
         doAllClear();
-        updateDisplay();
         break;
       case "%":
       case "/":
